@@ -1,0 +1,20 @@
+.form {
+    display: grid;
+    place-items: center;
+    width: 25%;
+    margin: auto;
+    margin-top: 8rem;
+    padding: 1.5rem;
+}
+
+.form h1{
+    font-size: 2rem;
+    color: var(--White);
+    font-weight: var(--fw-large);
+}
+
+.form p{
+    color: var(--Medium-Grey);
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-regular);
+}

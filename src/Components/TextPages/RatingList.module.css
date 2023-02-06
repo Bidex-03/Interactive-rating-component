@@ -1,0 +1,14 @@
+.Rating {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    color: var(--Medium-Grey);
+    font-weight: var(--fw-medium);
+}
+
+.Rating > *{
+    background: var(--Bg-Blue);
+    padding: 1rem;
+    border-radius: 100%;
+}
