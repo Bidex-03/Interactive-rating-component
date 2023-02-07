@@ -1,7 +1,7 @@
 .button{
     width: 100%;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 1rem;
+    border-radius: 3rem;
     outline: none;
     border: none;
     background: var(--Orange);
@@ -9,4 +9,9 @@
     letter-spacing: 2px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.button:hover{
+    background: var(--White);
+    color: var(--Orange);
 }

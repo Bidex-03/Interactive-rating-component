@@ -18,3 +18,27 @@
     font-weight: var(--fw-medium);
     font-size: var(--fs-regular);
 }
+
+/* media query@768px */
+
+@media screen and (max-width: 768px) {
+    .form {
+        width: 45%;
+    }
+}
+
+/* media query@425px */
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 90%;
+    }
+}
+
+/* media query@375px */
+
+@media screen and (max-width: 375px) {
+    .form {
+        width: 90%;
+    }
+}

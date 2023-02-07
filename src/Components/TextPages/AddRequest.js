@@ -3,6 +3,7 @@ import Card from "../UI/Card";
 
 import classes from "./AddRequest.module.css";
 import Button from "../UI/Button";
+// import image from "../Media/icon-star.svg";
 import RatingList from "./RatingList";
 
 const AddRequest = (props) => {
@@ -13,6 +14,9 @@ const AddRequest = (props) => {
   return (
     <Card className={classes.form}>
       <form onSubmit={AddRequestHandler}>
+        {/* <div>
+          <img src={image} alt="Star-image" />
+        </div> */}
         <div>
           <h1>How did we do?</h1>
           <p>

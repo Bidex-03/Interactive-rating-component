@@ -1,14 +1,20 @@
 .Rating {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
-    color: var(--Medium-Grey);
-    font-weight: var(--fw-medium);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+  color: var(--Medium-Grey);
+  font-weight: var(--fw-medium);
 }
 
-.Rating > *{
-    background: var(--Bg-Blue);
-    padding: 1rem;
-    border-radius: 100%;
+.Rating > * {
+  background: var(--Button-bg-Blue);
+  padding: 1rem;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
