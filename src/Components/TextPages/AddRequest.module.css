@@ -19,6 +19,13 @@
     font-size: var(--fs-regular);
 }
 
+.form img{
+    background: var(--Button-bg-Blue);
+    padding: 10px;
+    border-radius: 2rem;
+    margin-bottom: 1rem;
+}
+
 /* media query@768px */
 
 @media screen and (max-width: 768px) {

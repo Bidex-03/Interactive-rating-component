@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  place-items: center;
+  width: 25%;
+  margin: auto;
+  margin-top: 0;
+  padding: 1.5rem;
+}
+
+.selectedMessage {
+  background: var(--Button-bg-Blue);
+  color: var(--Orange);
+  padding: 10px 25px;
+  margin: 1.5rem;
+  border-radius: 50px;
+}
+
+.messageContainer {
+  text-align: center;
+}
+
+.messageContainer .thanks {
+  color: var(--White);
+  font-size: var(--fs-medium);
+  font-weight: var(--fw-large);
+  line-height: 1.8;
+}
+
+.messageContainer .message {
+  color: var(--Medium-Grey);
+  font-weight: var(--fw-medium);
+  line-height: 1.3;
+}
