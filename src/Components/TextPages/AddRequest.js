@@ -10,7 +10,7 @@ const AddRequest = (props) => {
 
   const AddRequestHandler = (e) => {
     e.preventDefault();
-    props.onSubmit()
+    props.onSubmitFun()
   };
 
   return (

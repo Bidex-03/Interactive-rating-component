@@ -9,11 +9,11 @@ const ThankYou = (props) => {
 
   const RateAgainHandler = e => {
     e.preventDefault();
-    props.onRate()
+    props.onRate();
   }
 
   return (
-    <Card className={classes.container} onRate={RateAgainHandler}>
+    <Card className={classes.container}>
       <div>
         <img src={image} alt="thank-you" className="thank-you" />
       </div>
@@ -27,7 +27,7 @@ const ThankYou = (props) => {
           more support, don't hesitate to get in touch!
         </p>
       </div>
-      <Button type="submit" >Rate Again</Button>
+      <Button type="submit" onClick={props.onRateAgain} >Rate Again</Button>
     </Card>
   );
 };
