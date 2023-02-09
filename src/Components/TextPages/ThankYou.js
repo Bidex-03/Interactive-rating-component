@@ -1,12 +1,19 @@
 import React from "react";
 
-import classes from "./ThankYou.module.css";
-import image from "../../Media/illustration-thank-you.svg";
 import Card from "../UI/Card";
+import image from "../../Media/illustration-thank-you.svg";
+import classes from "./ThankYou.module.css";
+import Button from "../UI/Button";
 
 const ThankYou = (props) => {
+
+  const RateAgainHandler = e => {
+    e.preventDefault();
+    props.onRate()
+  }
+
   return (
-    <Card className={classes.container}>
+    <Card className={classes.container} onRate={RateAgainHandler}>
       <div>
         <img src={image} alt="thank-you" className="thank-you" />
       </div>
@@ -20,6 +27,7 @@ const ThankYou = (props) => {
           more support, don't hesitate to get in touch!
         </p>
       </div>
+      <Button type="submit" >Rate Again</Button>
     </Card>
   );
 };

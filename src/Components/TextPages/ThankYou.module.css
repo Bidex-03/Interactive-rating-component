@@ -3,7 +3,7 @@
   place-items: center;
   width: 25%;
   margin: auto;
-  margin-top: 0;
+  margin-top: 8rem;
   padding: 1.5rem;
 }
 
@@ -17,6 +17,7 @@
 
 .messageContainer {
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .messageContainer .thanks {

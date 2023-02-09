@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../UI/Card";
 
-import classes from "./AddRequest.module.css";
 import Button from "../UI/Button";
 import RatingList from "./RatingList";
 import image from "../../Media/icon-star.svg";
+import classes from "./AddRequest.module.css";
 
 const AddRequest = (props) => {
+
   const AddRequestHandler = (e) => {
     e.preventDefault();
+    props.onSubmit()
   };
 
   return (
