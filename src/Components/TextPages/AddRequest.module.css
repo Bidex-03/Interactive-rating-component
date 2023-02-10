@@ -1,51 +1,51 @@
 .form {
-    display: grid;
-    place-items: center;
-    width: 25%;
-    margin: auto;
-    margin-top: 8rem;
-    padding: 1.5rem;
+  display: grid;
+  place-items: center;
+  width: 25%;
+  margin: auto;
+  margin-top: 8rem;
+  padding: 1.5rem;
 }
 
-.form h1{
-    font-size: 2rem;
-    color: var(--White);
-    font-weight: var(--fw-large);
+.form h1 {
+  font-size: 2rem;
+  color: var(--White);
+  font-weight: var(--fw-large);
 }
 
-.form p{
-    color: var(--Medium-Grey);
-    font-weight: var(--fw-medium);
-    font-size: var(--fs-regular);
+.form p {
+  color: var(--Medium-Grey);
+  font-weight: var(--fw-medium);
+  font-size: var(--fs-regular);
 }
 
-.form img{
-    background: var(--Button-bg-Blue);
-    padding: 10px;
-    border-radius: 2rem;
-    margin-bottom: 1rem;
+.form img {
+  background: var(--Button-bg-Blue);
+  padding: 10px;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 /* media query@768px */
 
 @media screen and (max-width: 768px) {
-    .form {
-        width: 45%;
-    }
+  .form {
+    width: 45%;
+  }
 }
 
 /* media query@425px */
 
 @media screen and (max-width: 425px) {
-    .form {
-        width: 90%;
-    }
+  .form {
+    width: 90%;
+  }
 }
 
 /* media query@375px */
 
 @media screen and (max-width: 375px) {
-    .form {
-        width: 90%;
-    }
+  .form {
+    width: 90%;
+  }
 }

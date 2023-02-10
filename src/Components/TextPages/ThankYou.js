@@ -6,12 +6,6 @@ import classes from "./ThankYou.module.css";
 import Button from "../UI/Button";
 
 const ThankYou = (props) => {
-
-  const RateAgainHandler = e => {
-    e.preventDefault();
-    props.onRate();
-  }
-
   return (
     <Card className={classes.container}>
       <div>

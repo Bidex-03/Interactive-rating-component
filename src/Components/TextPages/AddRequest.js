@@ -7,10 +7,9 @@ import image from "../../Media/icon-star.svg";
 import classes from "./AddRequest.module.css";
 
 const AddRequest = (props) => {
-
   const AddRequestHandler = (e) => {
     e.preventDefault();
-    props.onSubmitFun()
+    props.onSubmitFun();
   };
 
   return (

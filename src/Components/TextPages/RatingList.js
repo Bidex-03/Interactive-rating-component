@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 
 import classes from "./RatingList.module.css";
 
-const RatingList = (props) => {
+const RatingList = ({number}) => {
+  // const [isRated, setIsRated] = useState("");
+
   return (
     <ul className={classes.Rating}>
       <li>1</li>
