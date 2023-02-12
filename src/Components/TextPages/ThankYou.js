@@ -5,14 +5,18 @@ import image from "../../Media/illustration-thank-you.svg";
 import classes from "./ThankYou.module.css";
 import Button from "../UI/Button";
 
-const ThankYou = (props) => {
+const ThankYou = ({ num, setNum, setIsSubmitted }) => {
+  const okay = () => {
+    setNum(0);
+    setIsSubmitted(false);
+  };
   return (
     <Card className={classes.container}>
       <div>
         <img src={image} alt="thank-you" className="thank-you" />
       </div>
       <div className={classes.selectedMessage}>
-        <p>You selected 4 out of 5</p>
+        <p>You selected {num} out of 5</p>
       </div>
       <div className={classes.messageContainer}>
         <p className={classes.thanks}>Thank you!</p>
@@ -21,7 +25,10 @@ const ThankYou = (props) => {
           more support, don't hesitate to get in touch!
         </p>
       </div>
-      <Button type="submit" onClick={props.onRateAgain} >Rate Again</Button>
+      {/* <Button type="submit" onClick={props.onRateAgain} >Rate Again</Button> */}
+      <Button type="submit" onClick={okay}>
+        Rate Again
+      </Button>
     </Card>
   );
 };

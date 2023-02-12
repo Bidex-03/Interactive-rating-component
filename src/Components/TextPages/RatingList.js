@@ -1,17 +1,32 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 import classes from "./RatingList.module.css";
 
-const RatingList = ({number}) => {
-  // const [isRated, setIsRated] = useState("");
+const RatingList = ({ num, setNum, numRating }) => {
+  // const handleNums = (nums) => {
+  //   setNum(nums)
+  //   console.log(num);
+  // }
 
   return (
     <ul className={classes.Rating}>
-      <li>1</li>
-      <li>2</li>
-      <li>3</li>
-      <li>4</li>
-      <li>5</li>
+      {numRating.map((nums, id) => {
+        return (
+          <li
+            key={id}
+            className={
+              num === nums
+                ? "text-orange-500"
+                : num === nums + 1
+                ? "text-blue-500"
+                : "text-white"
+            }
+            onClick={() => setNum(nums)}
+          >
+            {nums}
+          </li>
+        );
+      })}
     </ul>
   );
 };

@@ -6,10 +6,10 @@ import RatingList from "./RatingList";
 import image from "../../Media/icon-star.svg";
 import classes from "./AddRequest.module.css";
 
-const AddRequest = (props) => {
+const AddRequest = ({submit, num, setNum, numRating}) => {
   const AddRequestHandler = (e) => {
     e.preventDefault();
-    props.onSubmitFun();
+    submit();
   };
 
   return (
@@ -26,9 +26,9 @@ const AddRequest = (props) => {
           </p>
         </div>
         <div>
-          <RatingList />
+          <RatingList num={num} setNum={setNum} numRating={numRating} />
         </div>
-        <Button type="submit">SUBMIT</Button>
+        <Button type="submit" onClick={() => submit()}>SUBMIT</Button>
       </form>
     </Card>
   );
