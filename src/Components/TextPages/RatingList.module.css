@@ -18,3 +18,18 @@
   align-items: center;
   cursor: pointer;
 }
+
+.Rating .focus{
+  background: var(--Orange);
+  color: var(--White);
+}
+
+.Rating .hover{
+  background: var(--Light-Grey);
+  color: var(--White);
+}
+
+.Rating .reset{
+  background: var(--Button-bg-Blue);
+  color: var(--White);
+}

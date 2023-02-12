@@ -16,10 +16,10 @@ const RatingList = ({ num, setNum, numRating }) => {
             key={id}
             className={
               num === nums
-                ? "text-orange-500"
+                ? `${classes.focus}`
                 : num === nums + 1
-                ? "text-blue-500"
-                : "text-white"
+                ? `${classes.hover}`
+                : `${classes.reset}`
             }
             onClick={() => setNum(nums)}
           >
