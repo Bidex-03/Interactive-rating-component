@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Card from "../UI/Card";
 
 import Button from "../UI/Button";
+import styles from "../UI/Button.module.css"
 import RatingList from "./RatingList";
 import image from "../../Media/icon-star.svg";
 import classes from "./AddRequest.module.css";
@@ -28,7 +29,7 @@ const AddRequest = ({submit, num, setNum, numRating}) => {
         <div>
           <RatingList num={num} setNum={setNum} numRating={numRating} />
         </div>
-        <Button className={classes.button} type="submit" onClick={() => submit()}>SUBMIT</Button>
+        <Button className={styles.button} type="submit" onClick={() => submit()}>SUBMIT</Button>
       </form>
     </Card>
   );
