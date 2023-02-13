@@ -1,9 +1,9 @@
 import React from "react";
 
 import Card from "../UI/Card";
-import image from "../../Media/illustration-thank-you.svg";
-import classes from "./ThankYou.module.css";
 import Button from "../UI/Button";
+import image from "../../Media/illustration-thank-you.svg";
+import classes from "../../CSS/ThankYou.module.css"
 
 const ThankYou = ({ num, setNum, setIsSubmitted }) => {
   const okay = () => {

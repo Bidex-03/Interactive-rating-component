@@ -26,6 +26,11 @@
   margin-bottom: 1rem;
 }
 
+.button{
+  width: 100%;
+  background: var(--Light-Grey);
+}
+
 /* media query@768px */
 
 @media screen and (max-width: 768px) {

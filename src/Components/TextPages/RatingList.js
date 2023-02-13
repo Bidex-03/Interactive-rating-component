@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./RatingList.module.css";
+import classes from "../../CSS/RatingList.module.css"
 
 const RatingList = ({ num, setNum, numRating }) => {
   // const handleNums = (nums) => {

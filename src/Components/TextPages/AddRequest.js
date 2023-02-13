@@ -1,16 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../UI/Card";
 
 import Button from "../UI/Button";
-import styles from "../UI/Button.module.css";
 import RatingList from "./RatingList";
 import image from "../../Media/icon-star.svg";
-import classes from "./AddRequest.module.css";
+import classes from "../../CSS/AddRequest.module.css"
 
 const AddRequest = ({ submit, num, setNum, numRating }) => {
   const AddRequestHandler = (e) => {
     e.preventDefault();
-    submit();
+    // submit();
   };
 
   return (
@@ -29,11 +28,7 @@ const AddRequest = ({ submit, num, setNum, numRating }) => {
         <div>
           <RatingList num={num} setNum={setNum} numRating={numRating} />
         </div>
-        <Button
-          className= "bg-green-500"
-          type="submit"
-          onClick={() => submit()}
-        >
+        <Button className="bg-orange-500" type="submit" onClick={() => submit()}>
           SUBMIT
         </Button>
       </form>

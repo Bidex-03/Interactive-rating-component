@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import RequestPage from "./Components/TextPages/AddRequest";
 import ThankYou from "./Components/TextPages/ThankYou";
-import Wrapper from "./Components/Helpers/Wrapper";
+import Wrapper from "./Helpers/Wrapper";
 
 function App() {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -13,17 +13,9 @@ function App() {
       setIsSubmitted(true);
     } else {
       setIsSubmitted(false);
-      alert("Nigga rate us on the scale of 1 to 5");
+      alert("Nigga, rate us on the scale of 1 to 5");
     }
   };
-
-  // const submitHandler = props => {
-  //   setIsSubmitted(true)
-  // }
-
-  // const rateAgainHandler = props => {
-  //   setIsSubmitted(false)
-  // }
 
   return (
     <Wrapper>
