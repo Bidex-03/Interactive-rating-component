@@ -13,14 +13,14 @@ const AddRequest = ({ submit, num, setNum, numRating }) => {
   };
 
   return (
-    <Card className={classes.form}>
-      <form onSubmit={AddRequestHandler}>
+    <Card className={classes.card}>
+      <form onSubmit={AddRequestHandler} className={classes.form}>
         <div>
           <img src={image} alt="Star-image" className="star" />
         </div>
         <div>
           <h1>How did we do?</h1>
-          <p>
+          <p className={classes.hey}>
             Please let us know how we did your support request. All feedback is
             appreciated to help us improve our offering!
           </p>

@@ -11,10 +11,6 @@
     cursor: pointer;
 }
 
-.hey{
-    color: violet;
-}
-
 .button:hover{
     background: var(--White);
     color: var(--Orange);

@@ -1,9 +1,15 @@
-.form {
+.card{
+  width: 25%;
   display: grid;
   place-items: center;
-  width: 25%;
   margin: auto;
   margin-top: 8rem;
+}
+
+.form {
+  /* width: 25%; */
+  /* width: 50%; */
+  /* margin: auto; */
   padding: 1.5rem;
 }
 
@@ -30,6 +36,11 @@
   width: 100%;
   background: var(--Light-Grey);
 }
+
+.hey{
+  color: red;
+}
+
 
 /* media query@768px */
 
