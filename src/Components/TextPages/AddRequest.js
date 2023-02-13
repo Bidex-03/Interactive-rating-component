@@ -9,18 +9,17 @@ import classes from "../../CSS/AddRequest.module.css"
 const AddRequest = ({ submit, num, setNum, numRating }) => {
   const AddRequestHandler = (e) => {
     e.preventDefault();
-    // submit();
   };
 
   return (
-    <Card className={classes.card}>
-      <form onSubmit={AddRequestHandler} className={classes.form}>
+    <Card className={classes.form}>
+      <form onSubmit={AddRequestHandler}>
         <div>
           <img src={image} alt="Star-image" className="star" />
         </div>
         <div>
           <h1>How did we do?</h1>
-          <p className={classes.hey}>
+          <p>
             Please let us know how we did your support request. All feedback is
             appreciated to help us improve our offering!
           </p>
