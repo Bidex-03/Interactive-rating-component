@@ -27,7 +27,7 @@ const AddRequest = ({ submit, num, setNum, numRating }) => {
         <div>
           <RatingList num={num} setNum={setNum} numRating={numRating} />
         </div>
-        <Button className="bg-orange-500" type="submit" onClick={() => submit()}>
+        <Button className={classes.button} type="submit" onClick={() => submit()}>
           SUBMIT
         </Button>
       </form>
